@@ -143,24 +143,120 @@ nav {
 }
 
 body {
-    margin-top: 9em;
-    background-color: var(--logo-color);
+  margin-top: 9em;
+  background-color: var(--logo-color);
 }
 
 .welcome {
-    width: 80%;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: var(--blue);
-    border: 3px solid var(--lightblue);
-    border-radius: 10px;
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--blue);
+  border: 3px solid var(--lightblue);
+  border-radius: 10px;
+  padding: 20px;
 }
 
 .welcome h1 {
+  color: white;
+  -webkit-text-stroke: 2px var(--lightblue);
+  margin-bottom: 10px;
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 700;
+  font-size: 60px;
+}
+
+.welcome p {
+  width: 95%;
+  text-align: center;
+  font-family: sans-serif;
+  color: white;
+  font-size: 20px;
+  font-family: "IBM Plex Mono", monospace;
+}
+
+.welcome hr {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 60%;
+  opacity: 0.3;
+}
+
+.home-boxes {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.home-box {
+  width: 100%;
+  display: flex;
+  margin: 0 auto;
+  border: 4px solid var(--lightblue);
+  border-radius: 10px;
+}
+
+.label {
+    width: 300px;
+    height: 100px;
+    background-color: var(--blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-style: hidden solid hidden hidden;
+    border-color: var(--lightblue);
+    border-width: 4px;
     color: white;
-    -webkit-text-stroke: 2px var(--lightblue);
+}
+
+.label img {
+    width: 40px;
+    margin-right: 8px;
+}
+
+.home-box h1 {
+  -webkit-text-stroke: 2px var(--lightblue);
+}
+
+.home-box-link {
+  text-decoration: none;
+  display: block;
+  margin-top: 20px;
+}
+
+.home-box-link:hover {
+  opacity: 0.7;
+}
+
+.home-box p {
+  padding: 10px;
+  background-color: white;
+  color: var(--logo-color);
+  border-radius: 3px;
+
+}
+
+#footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
+}
+
+#footer img {
+  width: 200px;
+  margin-bottom: 10px;
+}
+
+#footer p {
+  margin-bottom: 15px;
+  opacity: 0.7;
+  font-size: 17px;
+  font-family: monospace;
+  color: white;
 }
 
 @media (min-width: 900px) {
